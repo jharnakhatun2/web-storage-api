@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Session Storage API</title>
+    <title>Web Storage Api</title>
+    <style>
+        button{
+            display: block;
+            line-height: 2rem;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
+    <button onclick='setUserName("UserName", "Jharna214")'>set User Name</button>
+    <button onclick="getUserName('UserName')">Get User Name</button>
+    <button onclick="setName('Name', 'Nurul Amin')">set Name</button>
+    <button onclick="getName('Name')">get Name</button>
+    <button onclick="removeOneItem('UserName')">Remove One Item</button>
+    <button onclick="deleteAll()">Clear ALL</button>
+
     <script src="session.js"></script>
 </body>
 </html>

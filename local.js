@@ -15,6 +15,6 @@ function removeOneItem(key) {
     localStorage.removeItem(key);
 }
 
-function clear() {
+function deleteAll() {
     localStorage.clear();
 }
